@@ -2,32 +2,34 @@ import React from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { Link } from "react-router-dom";
 
 const services = [
   {
-    name: "UI/UX Design",
+    name: "REACT JS",
     description:
-      "React is a free and open-source front-end JavaScript library for building user interfaces based on components. It is maintained by Meta and a community of and companies.",
-    link: "Learn more",
+      "React is a free and open-source front-end JavaScript library for building user interfaces based on components. It is maintained by Meta and a community of individual developers and companies.",
+    url: "https://react.dev/",
   },
   {
-    name: "Development",
+    name: "NEXT JS",
     description:
-      "React is a free and open-source front-end JavaScript library for building user interfaces based on components. It is maintained by Meta and a community of and companies.",
-    link: "Learn more",
+      "Next.js is an open-source web development framework created by the private company Vercel providing React-based web applications with server-side rendering and static website generation.",
+    url: "https://nextjs.org/",
   },
   {
-    name: "Digital Marketing",
+    name: "TYPESCRIPT",
     description:
-      "React is a free and open-source front-end JavaScript library for building user interfaces based on components. It is maintained by Meta and a community of and companies.",
-    link: "Learn more",
+      "TypeScript is a free and open-source high-level programming language developed by Microsoft that adds static typing with optional type annotations to JavaScript.",
+    url: "https://www.typescriptlang.org/",
   },
   {
-    name: "Product Branding",
+    name: "REDUX",
     description:
-      "React is a free and open-source front-end JavaScript library for building user interfaces based on components. It is maintained by Meta and a community of and companies.",
-    link: "Learn more",
+      "Redux is an open-source JavaScript library for managing and centralizing application state. It is most commonly used with libraries such as React or Angular for building user interfaces.",
+    url: "https://redux.js.org/",
   },
+  
 ];
 
 const Services = () => {
@@ -47,7 +49,9 @@ const Services = () => {
               I'm a Freelance Front-end Developer with over 1 years of
               experience.
             </h3>
-            <button className="btn btn-sm">See my work</button>
+            <Link to="https://github.com/Alireza-hajizaki/Full-Stack-E-commerce_Next13-Store" target="_blank">
+              <button className="btn btn-sm">See my work</button>
+            </Link>
           </motion.div>
           <motion.div
             variants={fadeIn("left", 0.5)}
@@ -58,14 +62,14 @@ const Services = () => {
           >
             <div>
               {services.map((service, index) => {
-                const { name, description, link } = service;
+                const { name, description, url } = service;
                 return (
                   <div
                     key={index}
                     className="border-b border-white/20 h-[146px] mb-[38px] flex"
                   >
                     <div className="max-w-[476px]">
-                      <h4 className="text-[20px] tracking-wider font-primary font font-semibold mb-6">
+                      <h4 className="text-[20px] tracking-wider font-primary font font-semibold mb-4">
                         {name}
                       </h4>
                       <p className="font-semibold leading-tight">
@@ -73,15 +77,16 @@ const Services = () => {
                       </p>
                     </div>
                     <div className="flex flex-col flex-1 items-end">
-                      <a
-                        href="#"
+                      <Link
+                        to={url}
+                        target="_blank"
                         className="btn w-9 h-9 mb-[42px] flex justify-center items-center"
                       >
                         <BsArrowUpRight />
-                      </a>
-                      <a href="#" className="text-gradient text-sm">
-                        {link}
-                      </a>
+                      </Link>
+                      <Link to={url} className="text-gradient text-sm">
+                        Learn more
+                      </Link>
                     </div>
                   </div>
                 );

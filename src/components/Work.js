@@ -4,6 +4,7 @@ import { fadeIn } from "../variants";
 import Img1 from "../assets/portfolio-img1.png";
 import Img2 from "../assets/portfolio-img2.png";
 import Img3 from "../assets/portfolio-img3.png";
+import { Link } from "react-router-dom";
 
 const Work = () => {
   return (
@@ -27,7 +28,9 @@ const Work = () => {
                 building user interfaces based on components. It is maintained
                 by Meta and a community of and companies.
               </p>
-              <button className="btn btn-sm">View all project</button>
+              <Link to='https://github.com/Alireza-hajizaki?tab=repositories' target="_blank">
+                <button className="btn btn-sm">View all project</button>
+              </Link>
             </div>
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
