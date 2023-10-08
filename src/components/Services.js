@@ -41,13 +41,12 @@ const Services = () => {
             variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.3 }}
             className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
           >
             <h2 className="h2 text-accent">What I Do.</h2>
             <h3 className="h3 max-w-[455px] mb-16">
-              I'm a Freelance Front-end Developer with over 1 years of
-              experience.
+              Hi👋  I'm ready to build E-commerce and Social media - Blog - Business - Personal web page - Portfolio - School website - Travel website - News and magazine website &  ...
             </h3>
             <Link to="https://github.com/Alireza-hajizaki/Full-Stack-E-commerce_Next13-Store" target="_blank">
               <button className="btn btn-sm">See my work</button>
@@ -57,7 +56,7 @@ const Services = () => {
             variants={fadeIn("left", 0.5)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.3 }}
             className="flex-1"
           >
             <div>
