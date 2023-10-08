@@ -23,6 +23,89 @@
   );
 }
 
+.btn-box div{
+  background: #b936ee;
+  border: 2px solid #b936ee;
+  border-radius: 8px;
+  font-size: 19px;
+  padding: 0.5rem 1rem;
+  color: #082b29;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.btn-box div:nth-child(2) {
+  background: transparent;
+  color: #B809C3;
+}
+
+.btn-box div:nth-child(2):hover{
+  color: #081b29;
+}
+
+.btn-box div:nth-child(2)::before{
+  background: #B809C3;
+}
+
+.btn-box div:hover{
+  color: #B809C3;
+}
+
+.btn-box div::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #081b29;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.btn-box div:hover::before {
+  width: 100%;
+}
+
+.home-sci div {
+  position: relative;
+  background: transparent;
+  border: 2px solid #3bace2;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #3bace2;
+  text-decoration: none;
+  padding: 0.5rem;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.home-sci div:hover{
+  color: #081b29;
+}
+
+.home-sci div::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #3bace2;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.home-sci div:hover::before{
+  width: 100%;
+}
+
 .gradient,
 .active {
   background: linear-gradient(

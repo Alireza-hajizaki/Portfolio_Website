@@ -4,7 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import { Link } from "react-router-dom";
-import myResume from "../files/Alireza_Hajizaki_Resume.pdf"
+import myResume from "../files/Alireza_Hajizaki_Resume.pdf";
 
 const Banner = () => {
   return (
@@ -66,10 +66,15 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
-              <Link to='tel:+989902226331'>
+              <Link to="tel:+989902226331">
                 <button className="btn btn-lg">Contact Me</button>
               </Link>
-              <Link to={myResume} download="Alireza_Hajizaki_Resume.pdf" target="_blank" className="text-gradient btn-link">
+              <Link
+                to={myResume}
+                download="Alireza_Hajizaki_Resume.pdf"
+                target="_blank"
+                className="text-gradient btn-link"
+              >
                 My Resume
               </Link>
             </motion.div>
@@ -78,14 +83,21 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="flex text-[30px] gap-x-6 max-w-max mx-auto lg:mx-5"
+              className="flex gap-x-6 max-w-max mx-auto lg:mx-5 home-sci"
             >
-              <Link to="https://www.linkedin.com/in/alireza-hajizaki-4a0aa8278" target="_blank">
-                <FaLinkedin/>
-              </Link>
-              <Link to="https://github.com/Alireza-hajizaki" target="_blank">
-                <FaGithub />
-              </Link>
+              <div>
+                <Link
+                  to="https://www.linkedin.com/in/alireza-hajizaki-4a0aa8278"
+                  target="_blank"
+                >
+                  <FaLinkedin />
+                </Link>
+              </div>
+              <div>
+                <Link to="https://github.com/Alireza-hajizaki" target="_blank">
+                  <FaGithub />
+                </Link>
+              </div>
             </motion.div>
           </div>
           <motion.div

@@ -4,8 +4,7 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import { Link } from "react-router-dom";
-import myResume from "../files/Alireza_Hajizaki_Resume.pdf"
-
+import myResume from "../files/Alireza_Hajizaki_Resume.pdf";
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -36,14 +35,15 @@ const About = () => {
               experience.
             </h3>
             <p className="mb-6">
-              I'm Alireza Hajizaki from Esf-Khansar & Live in Tehran<br/>
-              26 years old <br/>
-              Military Service: exempt <br/>
-              Marital Status : Single<br/>
-              Birth Year : 1996<br/>
-              Maktab Sharif Coding
-              Bootcamp Js & ReactJS
-              (+400 hours)
+              I'm Alireza Hajizaki from Esf-Khansar & Live in Tehran
+              <br />
+              26 years old <br />
+              Military Service: exempt <br />
+              Marital Status : Single
+              <br />
+              Birth Year : 1996
+              <br />
+              Maktab Sharif Coding Bootcamp Js & ReactJS (+400 hours)
             </p>
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
               <div>
@@ -76,13 +76,21 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="flex gap-x-8 items-center">
-            <Link to='tel:+989902226331'>
-                <button className="btn btn-lg">Contact Me</button>
-              </Link>
-              <Link to={myResume} download="Alireza_Hajizaki_Resume.pdf" target="_blank" className="text-gradient btn-link">
-                My Resume
-              </Link>
+            <div className="flex gap-x-8 items-center btn-box">
+              <div>
+                <Link to="tel:+989902226331">
+                  <button>Contact Me</button>
+                </Link>
+              </div>
+              <div>
+                <Link
+                  to={myResume}
+                  download="Alireza_Hajizaki_Resume.pdf"
+                  target="_blank"
+                >
+                  My Resume
+                </Link>
+              </div>
             </div>
           </motion.div>
         </div>
