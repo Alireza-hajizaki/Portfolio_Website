@@ -12,7 +12,7 @@ const VerticalElem = ({icon , title}) => {
         color: "#fff",
       }}
       contentArrowStyle={{ borderRight: "7px solid  #b936ee" }}
-      date="2011 - present"
+      date="2023 - present"
       iconStyle={{ background:"#9c4197" , color: "#fff" }}
       icon={icon}
     >

@@ -58,8 +58,8 @@ const Skills = () => {
   return (
     <section className="my-48" id="skills">
       <VerticalTimeline>
-        {skills.map((skill) => (
-            <VerticalElem title={skill.title} icon={skill.icon} />
+        {skills.map((skill , index) => (
+            <VerticalElem key={index} title={skill.title} icon={skill.icon} />
         ))}
       </VerticalTimeline>
     </section>
