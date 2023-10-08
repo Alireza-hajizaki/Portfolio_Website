@@ -1,5 +1,6 @@
 import React from "react";
 import { BiHomeAlt, BiUser } from "react-icons/bi";
+import { GiSkills } from "react-icons/gi";
 import { BsClipboardData, BsBriefcase, BsChatSquare } from "react-icons/bs";
 import { Link } from "react-scroll";
 
@@ -44,6 +45,15 @@ const Nav = () => {
             className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
           >
             <BsBriefcase />
+          </Link>
+          <Link
+            to="skills"
+            activeClass='active'
+            smooth={true}
+            spy={true}
+            className="cursor-pointer w-[60px] h-[60px] flex items-center justify-center"
+          >
+            <GiSkills />
           </Link>
           <Link
             to="contact"

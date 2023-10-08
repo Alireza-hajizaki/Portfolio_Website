@@ -19,7 +19,7 @@ const Banner = () => {
               variants={fadeIn("up", 0.3)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true, amount: 0.7 }}
               className="text-[55px] font-bold leading-[0.8] lg:text-[110px]"
             >
               SHAHRAM<span> HZ</span>
@@ -28,7 +28,7 @@ const Banner = () => {
               variants={fadeIn("up", 0.4)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true, amount: 0.7 }}
               className="mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]"
             >
               <span className="text-white mr-4">I'M A</span>
@@ -51,7 +51,7 @@ const Banner = () => {
               variants={fadeIn("up", 0.5)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true, amount: 0.7 }}
               className="mb-8 max-w-lg mx-auto lg:mx-0"
             >
               I Love Learning and I have always enjoyed communication and being
@@ -63,7 +63,7 @@ const Banner = () => {
               variants={fadeIn("up", 0.6)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
             >
               <Link to="tel:+989902226331">
@@ -82,29 +82,30 @@ const Banner = () => {
               variants={fadeIn("up", 0.7)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: true, amount: 0.7 }}
               className="flex gap-x-6 max-w-max mx-auto lg:mx-5 home-sci"
             >
-              <div>
-                <Link
-                  to="https://www.linkedin.com/in/alireza-hajizaki-4a0aa8278"
-                  target="_blank"
-                >
+              <Link
+                to="https://www.linkedin.com/in/alireza-hajizaki-4a0aa8278"
+                target="_blank"
+              >
+                <div>
                   <FaLinkedin />
-                </Link>
-              </div>
-              <div>
-                <Link to="https://github.com/Alireza-hajizaki" target="_blank">
+                </div>
+              </Link>
+
+              <Link to="https://github.com/Alireza-hajizaki" target="_blank">
+                <div>
                   <FaGithub />
-                </Link>
-              </div>
+                </div>
+              </Link>
             </motion.div>
           </div>
           <motion.div
             variants={fadeIn("down", 0.5)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.7 }}
+            viewport={{ once: true, amount: 0.7 }}
             className="flex-1 hidden lg:bg-banner lg:bg-contain lg:flex max-w-[320px] lg:max-w-[482px] bg-no-repeat h-[380px] w-[400px] mix-blend-lighten"
           >
             {/* <img src='images/2.jpg' alt="" className="h-[400px] w-[400px] mix-blend-lighten"/> */}
