@@ -28,7 +28,7 @@ const skills = [
         icon: <SiNextdotjs />,
     },
     {
-        title: 'Tailwind Css/Ui, Daisy Ui, Bootstrap, Flowbite, Shad Cn, Sass, Material Ui, Redix Ui',
+        title: 'Tailwind Css/Ui, Daisy Ui, Bootstrap, Flowbite, Shad Cn, Sass, Material Ui, Redix Ui , Framer Motion',
         icon: <FaCss3Alt />,
     },
     {
